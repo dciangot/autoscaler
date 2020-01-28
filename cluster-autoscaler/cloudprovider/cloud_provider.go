@@ -22,8 +22,9 @@ import (
 
 	apiv1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
-	"k8s.io/autoscaler/cluster-autoscaler/utils/errors"
 	schedulernodeinfo "k8s.io/kubernetes/pkg/scheduler/nodeinfo"
+
+	"k8s.io/autoscaler/cluster-autoscaler/utils/errors"
 )
 
 const (
@@ -43,6 +44,8 @@ const (
 	MagnumProviderName = "magnum"
 	// KubemarkProviderName gets the provider name of kubemark
 	KubemarkProviderName = "kubemark"
+	// DodasProviderName gets provider name of dodas
+	DodasProviderName = "dodas"
 )
 
 // CloudProvider contains configuration info and functions for interacting with
